@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88efcc4c-275a-476b-8226-ad51a152ab36" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Github</find>
+      <find>Aleksander Kucy</find>
+      <find>Artem</find>
+      <find>Artemi</find>
+      <find>glts</find>
+      <find>leiningen</find>
+      <find>&quot;url&quot;</find>
+      <find>HQWord</find>
+      <find>print</find>
+      <find>2</find>
+      <find>message</find>
+      <find>if</find>
+      <find>md</find>
+      <find>md,</find>
+      <find>(md,</find>
+      <find>unkno</find>
+      <find>unk</find>
+      <find>Revert</find>
+      <find>File</find>
+      <find>unknown</find>
+      <find>Stats</find>
+      <find>Timestamp</find>
+      <find>time</find>
+      <find>date</find>
+      <find>repository</find>
+      <find>Githu</find>
+      <find>count</find>
+      <find>expec</find>
+      <find>getda</find>
+      <find>extension</find>
+    </findStrings>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectId" id="1dXxY1DB6TXCd1zmRPRvuBcQ5Ta" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RunManager" selected="ScalaTest.StudentTest">
+    <configuration name="StudentTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="spark" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="jrePath" value="" />
+      <option name="testClassPath" value="RDDAssignment.StudentTest" />
+      <option name="workingDirectory" value="C:\Users\Johannes\Dropbox\Uni\CSE\Year 2\Quarter 1\Big Data Processing\Assignment\Assignment 3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest.Assert DF assignment 4" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="spark" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="jrePath" value="" />
+      <option name="testClassPath" value="DataFrameAssignment.StudentTest" />
+      <option name="testName" value="Assert DF assignment 4" />
+      <option name="workingDirectory" value="C:\Users\Johannes\Dropbox\Uni\CSE\Year 2\Quarter 1\Big Data Processing\Assignment\Assignment 3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest.Assert DF assignment 5" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="spark" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="jrePath" value="" />
+      <option name="testClassPath" value="DataFrameAssignment.StudentTest" />
+      <option name="testName" value="Assert DF assignment 5" />
+      <option name="workingDirectory" value="C:\Users\Johannes\Dropbox\Uni\CSE\Year 2\Quarter 1\Big Data Processing\Assignment\Assignment 3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest.Assert DF assignment 6" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="spark" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="jrePath" value="" />
+      <option name="testClassPath" value="DataFrameAssignment.StudentTest" />
+      <option name="testName" value="Assert DF assignment 6" />
+      <option name="workingDirectory" value="C:\Users\Johannes\Dropbox\Uni\CSE\Year 2\Quarter 1\Big Data Processing\Assignment\Assignment 3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest.Assert DF assignment 7" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="spark" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="jrePath" value="" />
+      <option name="testClassPath" value="DataFrameAssignment.StudentTest" />
+      <option name="testName" value="Assert DF assignment 7" />
+      <option name="workingDirectory" value="C:\Users\Johannes\Dropbox\Uni\CSE\Year 2\Quarter 1\Big Data Processing\Assignment\Assignment 3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="ScalaTest.StudentTest" />
+        <item itemvalue="ScalaTest.StudentTest.Assert DF assignment 7" />
+        <item itemvalue="ScalaTest.StudentTest.Assert DF assignment 4" />
+        <item itemvalue="ScalaTest.StudentTest.Assert DF assignment 6" />
+        <item itemvalue="ScalaTest.StudentTest.Assert DF assignment 5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88efcc4c-275a-476b-8226-ad51a152ab36" name="Default Changelist" comment="" />
+      <created>1569787782374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569787782374</updated>
+      <workItem from="1569787785600" duration="182000" />
+      <workItem from="1570225726330" duration="1302000" />
+      <workItem from="1570295981056" duration="16715000" />
+      <workItem from="1570475678083" duration="2831000" />
+      <workItem from="1570521148261" duration="18697000" />
+      <workItem from="1570624414819" duration="15967000" />
+      <workItem from="1570693883533" duration="10054000" />
+      <workItem from="1570706079115" duration="676000" />
+      <workItem from="1570707318252" duration="6058000" />
+      <workItem from="1571132450875" duration="22183000" />
+      <workItem from="1571167156857" duration="71000" />
+      <workItem from="1571214692470" duration="1348000" />
+      <workItem from="1571229505226" duration="654000" />
+      <workItem from="1571234109552" duration="140000" />
+      <workItem from="1571247790071" duration="673000" />
+      <workItem from="1571249549393" duration="52000" />
+      <workItem from="1571253977979" duration="383000" />
+      <workItem from="1592585288008" duration="38000" />
+      <workItem from="1653317084653" duration="805000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="StudentTest_Assert_DF_assignment_4 - 2019.10.15 at 19h 23m 52s.xml">
+      <configuration name="StudentTest.Assert DF assignment 4" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest_Assert_DF_assignment_4 - 2019.10.15 at 19h 24m 59s.xml">
+      <configuration name="StudentTest.Assert DF assignment 4" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest_Assert_DF_assignment_4 - 2019.10.15 at 19h 29m 33s.xml">
+      <configuration name="StudentTest.Assert DF assignment 4" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest_Assert_DF_assignment_4 - 2019.10.15 at 19h 29m 34s.xml">
+      <configuration name="StudentTest.Assert DF assignment 4" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest_Assert_DF_assignment_4 - 2019.10.15 at 19h 30m 45s.xml">
+      <configuration name="StudentTest.Assert DF assignment 4" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest_Assert_DF_assignment_4 - 2019.10.15 at 19h 32m 36s.xml">
+      <configuration name="StudentTest.Assert DF assignment 4" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest_Assert_DF_assignment_4 - 2019.10.15 at 19h 35m 06s.xml">
+      <configuration name="StudentTest.Assert DF assignment 4" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest_Assert_DF_assignment_7 - 2019.10.15 at 19h 48m 25s.xml">
+      <configuration name="StudentTest.Assert DF assignment 7" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest_Assert_DF_assignment_7 - 2019.10.15 at 20h 00m 27s.xml">
+      <configuration name="StudentTest.Assert DF assignment 7" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="StudentTest - 2019.10.15 at 20h 04m 52s.xml">
+      <configuration name="StudentTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8.0_201</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
