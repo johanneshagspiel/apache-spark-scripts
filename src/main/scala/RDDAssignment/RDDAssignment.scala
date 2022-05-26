@@ -70,17 +70,17 @@ object RDDAssignment {
 
     def flattenTemp[A, B, C](x:(A,(B, C))): (A,B,C) = (x._1, x._2._1, x._2._2)
 
-    val result = commits.
+    val pipeline = commits.
         map(commit => commit.commit.author.name).
         map(name => (name, 1.toLong)).
         reduceByKey((name , occurences) => name + occurences).
-      sortBy(x => x._1.toLowerCase, true).
-      sortBy(x => x._2, false).
+        sortBy(x => x._1.toLowerCase, true).
+        sortBy(x => x._2, false).
         zipWithIndex().
         map(_.swap).
         map(element => flattenTemp(element))
 
-    result
+    pipeline
     }
 
   /**
@@ -94,12 +94,12 @@ object RDDAssignment {
     */
   def assignment_4(commits: RDD[Commit], users: List[String]): RDD[(String, Stats)] = {
 
-    val result = commits.
+    val pipeline = commits.
       filter(commit => users.contains(commit.commit.committer.name)).
       map(commit => (commit.commit.committer.name, commit.stats.getOrElse(Stats(0,0,0)))).
       reduceByKey((stats1, stats2) => Stats(stats1.total + stats2.total, stats1.additions + stats2.additions, stats1.deletions + stats2.deletions))
 
-    result
+    pipeline
   }
 
 
@@ -170,13 +170,13 @@ object RDDAssignment {
 
     }
 
-      val result = commits.
+      val pipeline = commits.
         map(commit => (helper(commit))).
         map(element => (element._1, (element._2, 1))).
         reduceByKey((x,y) => ((if (x._1 > y._1) (x._1, x._2) else if (x._1 == y._1) (x._1, x._2 + 1) else (y._1, y._2)))).
         filter(x => (x._2._1 !=0 ))
 
-    result
+    pipeline
   }
 
 
@@ -222,7 +222,7 @@ object RDDAssignment {
       result
     }
 
-      val result = commits.
+      val pipeline = commits.
         map(commit => helper(commit)).
         map(entry => (entry, 1.toLong)).
         map(x => flattenTemp2(x)).
@@ -230,7 +230,7 @@ object RDDAssignment {
         map(x => flattenTemp1(x)).
         map(x =>helperDistinct(x._1, x._2, x._3))
 
-    result
+    pipeline
   }
 
   /**
@@ -284,7 +284,7 @@ object RDDAssignment {
         if (head.filename.isEmpty) helperDeleteFileWithNoName(tail) else head :: helperDeleteFileWithNoName(tail)
     }
 
-    val result = commits.
+    val pipeline = commits.
       flatMap(x => helper(x)).
       map(x => flattenTemp1(x)).
       reduceByKey((x,y) => (if(x._3.after(y._3)) x else y)).
@@ -292,7 +292,7 @@ object RDDAssignment {
       reduceByKey((x,y) => (x._1, x._2 ++ y._2)).
       map(x => flattenTemp3(x))
 
-    result
+    pipeline
   }
 
 
@@ -345,14 +345,14 @@ object RDDAssignment {
       result
     }
 
-    val result = commits.
+    val pipeline = commits.
       filter(commit => helperGetRepository(commit.url, repository)).
       flatMap(entry => helper(entry)).
       map(x => flattenTemp1(x)).
       reduceByKey((x,y) => (x._1++y._1, Stats(x._2.total + y._2.total, x._2.additions + y._2.additions, x._2.deletions + y._2.deletions))).
       map(x => flattenTemp2(x._1, x._2._1, x._2._2))
 
-    result
+    pipeline
   }
 
   /**
@@ -385,12 +385,12 @@ object RDDAssignment {
       repositoryResult
     }
 
-    val result = commits.
+    val pipeline = commits.
       map(x => (helper(x))).
       reduceByKey((x, y) => (if (x.isEmpty && y.isEmpty) (None) else if (x.isEmpty && y.nonEmpty) y else if (y.isEmpty && x.nonEmpty) x else Some(Stats(x.get.total + y.get.total, x.get.additions + y.get.additions, x.get.deletions + y.get.deletions)))).
       map(x => flattenTemp(x))
 
-      result
+    pipeline
   }
 
 

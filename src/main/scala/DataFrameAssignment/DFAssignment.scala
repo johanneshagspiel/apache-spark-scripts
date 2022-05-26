@@ -41,14 +41,14 @@ object DFAssignment {
     */
   def assignment_1(commits: DataFrame, authors: Seq[String]): DataFrame = {
 
-     val test = commits.
-      filter(commits("commit.committer.name")isin(authors: _*)).
+     val pipeline = commits.
+       filter(commits("commit.committer.name")isin(authors: _*)).
        select("commit.committer.name", "sha", "commit.author.date").
        withColumnRenamed("name", "committer").
        withColumnRenamed("date", "timestamp").
-      orderBy(asc("date"))
+       orderBy(asc("date"))
 
-    test
+    pipeline
   }
 
   /**
@@ -95,7 +95,7 @@ object DFAssignment {
     val getListSizeUDF = udf((s: List[Int]) => (s.size))
 
 
-    val test = commits.
+    val pipieline = commits.
       withColumn("repository", getRepositoryUDF(col("url"))).
       withColumn("week", getWeekUDF(col("commit.author.date"))).
       withColumn("year", getYearUDF(col("commit.author.date"))).
@@ -104,7 +104,7 @@ object DFAssignment {
       groupBy("repository", "week", "year").
       agg(count("countTemp").alias("count"))
 
-    test
+    pipieline
   }
 
   /**
@@ -129,14 +129,14 @@ object DFAssignment {
 
     val timeDifferenceSeconds = udf((s: Timestamp, t: Timestamp) => (t.getTime - s.getTime)/1000)
 
-    val test = commits.
+    val pipeline = commits.
       withColumn("timeCommit", commits("commit.author.date")).
       withColumn("timeStamp", lit(snapShotTimestamp)).
       withColumn("age", timeDifferenceSeconds(col("timeCommit"), col("timeStamp"))).
       drop("timeCommit").
       drop("timeStamp")
 
-    test
+    pipeline
   }
 
 
@@ -174,7 +174,7 @@ object DFAssignment {
     val getTime = udf((s: Timestamp) => helperGetDay(s))
     val windowTest = Window.partitionBy("committer").orderBy("date")
 
-    val test = commits.
+    val pipeline = commits.
       withColumn("committer", col("commit.committer.name")).
       withColumn("date", getTime(col("commit.committer.date"))).
       filter(col("committer")isin(authorSeq: _*)).
@@ -182,7 +182,7 @@ object DFAssignment {
       drop("date").
       drop("committer")
 
-    test
+    pipeline
   }
 
 
@@ -213,14 +213,14 @@ object DFAssignment {
 
     val getDayUDF = udf((s: Timestamp) => (helperGetDay(s)))
 
-    val test = commits.
+    val pipeline = commits.
         withColumn("day", getDayUDF(col("commit.committer.date"))).
-      withColumn("countTemp", lit(1)).
-      select("day", "countTemp").
-      groupBy("day").
-      agg(count("countTemp").alias("count"))
+        withColumn("countTemp", lit(1)).
+        select("day", "countTemp").
+        groupBy("day").
+        agg(count("countTemp").alias("count"))
 
-    test
+    pipeline
   }
 
 
@@ -246,14 +246,14 @@ object DFAssignment {
 
     val timeDifference = udf((s: Timestamp, t: Timestamp) => ((Math.abs(t.getTime - s.getTime))/1000))
 
-    val test = commits.
+    val pipeline = commits.
       withColumn("timeCommitter", col("commit.committer.date")).
       withColumn("timeAuthor", col("commit.author.date")).
       withColumn("commit_time_diff", timeDifference(col("timeCommitter"), col("timeAuthor"))).
       drop("timeCommitter").
       drop("timeAuthor")
 
-    test
+    pipeline
   }
 
   /**
