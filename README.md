@@ -14,8 +14,18 @@ This repository contains a collection of Apache Spark scripts used to get famili
 
 These scripts cover a range of topics of Apache Spark such as:
 
-- applying principles of functional programming to RDDs via functions like map, reduceByKey, flatten or filter
-- applying Spark SQL to DataFrames 
+- manipulating RDDs via:
+  - functional programming principles like pattern matching
+  - regex
+  - functions like:
+    - `map`
+    - `flatMap`
+    - `reduceByKey`
+    - `flatten`
+    - `filter`
+- manipulating DataFrames via:
+  - Spark SQL
+  - custom aggregation functions using `Window`
 
 ## Tools
 

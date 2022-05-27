@@ -206,8 +206,8 @@ object RDDAssignment {
     }
 
     def helperGetContributer(commit: Commit): Iterable[String] = {
-      val test: List[String] = commit.commit.committer.name :: Nil
-      test
+      val result: List[String] = commit.commit.committer.name :: Nil
+      result
     }
 
     def helper(input: Commit): (String, Iterable[String]) = {
@@ -250,7 +250,7 @@ object RDDAssignment {
 
     def helper(commit: Commit): List[(String, Iterable[File], String, Timestamp)] = {
 
-      val  repositoryName = helperGetRepositoryName(commit.url)
+      val repositoryName = helperGetRepositoryName(commit.url)
       val timestamp: Timestamp = commit.commit.author.date
 
       val files: Iterable[File] =  helperDeleteFileWithNoName(commit.files)
@@ -265,8 +265,8 @@ object RDDAssignment {
     }
 
     def helperList(fileIn: File): Iterable[File] = {
-      val test: List[File] = fileIn :: Nil
-      test
+      val result: List[File] = fileIn :: Nil
+      result
     }
 
     def helperGetRepositoryName(urlIn: String): String = {
