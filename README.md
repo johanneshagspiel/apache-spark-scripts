@@ -1,4 +1,4 @@
-<img src=resources/apache_spark_logo.png alt="Scala Logo" width="192" height="100">
+<img src=img/apache_spark_logo.png alt="Apache Spark Logo" width="192" height="100">
 
 --------------------------------------------------------------------------------
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
